@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -55,15 +58,16 @@ nav a:hover {
 section {
     padding: 90px 10%;
     text-align: center;
+    scroll-margin-top: 35vh;
 }
+
+/* HOME */
 
 section h2 {
     font-size: 30px;
     margin-bottom: 30px;
     color: #9679B4;
 }
-
-/* HOME */
 
 #home {
     min-height: 85vh;
@@ -222,6 +226,7 @@ footer {
 
     section {
         padding: 65px 6%;
+        scroll-margin-top: 35vh;
     }
 
     .project-card,
