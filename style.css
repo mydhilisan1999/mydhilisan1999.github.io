@@ -181,10 +181,6 @@ nav ul a:hover {
     width: 100%;
     max-width: 380px;
     justify-self: center;
-}
-
-/* Subtle animation for the profile photo only */
-.home-image {
     animation: profileFloat 6s ease-in-out infinite;
 }
 
@@ -314,13 +310,13 @@ nav ul a:hover {
 
 .about-facts {
     display: grid;
-    grid-template-columns: repeat(2, minmax(120px, 180px));
-    gap: 40px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
     margin-top: 65px;
 }
 
 .about-facts div {
-    min-width: 120px;
+    min-width: 0;
     border-top: 1px solid #DCCDE7;
     padding-top: 18px;
 }
@@ -660,9 +656,17 @@ footer {
     }
 
     .about-facts {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 25px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
         margin-top: 40px;
+    }
+
+    .about-facts h3 {
+        font-size: 24px;
+    }
+
+    .about-facts p {
+        font-size: 10px;
     }
 
     .skills-grid {
