@@ -175,18 +175,50 @@ nav ul a:hover {
 }
 
 
-/* PROFILE PHOTO */
+/* PROFILE PHOTO AND FLOWER BACKGROUND */
 
 .home-image {
     width: 100%;
     max-width: 380px;
     justify-self: center;
+    position: relative;
+    isolation: isolate;
 }
+
+/* Large static botanical flower decoration */
+
+.home-image::before {
+    content: "";
+    position: absolute;
+
+    /* Keeps the flower visible behind the photo */
+    z-index: 0;
+
+    /* Moves the flower to the right */
+    top: -35px;
+    right: -155px;
+
+    /* Makes the flower larger */
+    width: 430px;
+    height: 590px;
+
+    pointer-events: none;
+    opacity: 0.85;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 430 590' fill='none' stroke='%239B86B5' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M350 585C300 500 320 425 260 350C205 280 240 205 175 130C140 90 125 45 135 5'/%3E%3Cpath d='M260 350C310 310 355 300 410 315C375 355 320 370 260 350Z'/%3E%3Cpath d='M260 350L410 315'/%3E%3Cpath d='M225 300C165 280 125 240 115 190C175 200 215 240 225 300Z'/%3E%3Cpath d='M225 300L115 190'/%3E%3Cpath d='M175 130C215 95 235 55 225 15C180 40 155 85 175 130Z'/%3E%3Cpath d='M175 130L225 15'/%3E%3Cpath d='M315 470C360 435 400 430 425 445C395 480 350 490 315 470Z'/%3E%3Cpath d='M315 470L425 445'/%3E%3Cpath d='M120 85C80 65 55 35 60 5C100 25 125 55 120 85Z'/%3E%3Cpath d='M120 85L60 5'/%3E%3Cpath d='M300 190C290 145 315 100 350 80C365 125 345 170 300 190Z'/%3E%3Cpath d='M300 190L350 80'/%3E%3Cpath d='M275 260C300 215 340 195 380 205C355 250 315 275 275 260Z'/%3E%3Cpath d='M275 260L380 205'/%3E%3Cpath d='M180 410C130 390 100 350 105 310C155 335 185 375 180 410Z'/%3E%3Cpath d='M180 410L105 310'/%3E%3Cpath d='M90 155C65 140 50 115 55 90C85 105 100 130 90 155Z'/%3E%3Cpath d='M90 155L55 90'/%3E%3Cpath d='M335 380C370 350 400 345 425 360C400 390 365 400 335 380Z'/%3E%3Cpath d='M335 380L425 360'/%3E%3C/svg%3E");
+}
+
+/* Profile photo frame */
 
 .image-frame {
     width: 100%;
     height: 460px;
     position: relative;
+    z-index: 1;
     overflow: hidden;
     border: 8px solid white;
     border-radius: 190px 190px 12px 12px;
@@ -200,48 +232,6 @@ nav ul a:hover {
     height: 100%;
     object-fit: cover;
     object-position: center 35%;
-}
-
-/* Subtle animation for the profile photo only */
-
-.home-image {
-    animation: profileFloat 4.5s ease-in-out infinite;
-    position: relative;
-    isolation: isolate;
-}
-
-/* Subtle botanical line art behind the profile photo, on the right only */
-
-.home-image::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 35px;
-    right: -78px;
-    width: 270px;
-    height: 390px;
-    pointer-events: none;
-    opacity: 0.72;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 270 390' fill='none' stroke='%239B86B5' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M245 385C205 325 218 275 178 226C146 186 164 139 124 96C102 73 91 44 96 8'/%3E%3Cpath d='M185 239C213 218 239 216 258 222C241 244 214 252 185 239Z'/%3E%3Cpath d='M180 235C205 231 229 226 258 222'/%3E%3Cpath d='M160 192C131 184 112 165 105 143C135 147 157 164 160 192Z'/%3E%3Cpath d='M158 188C139 172 122 157 105 143'/%3E%3Cpath d='M133 112C157 93 168 69 163 45C137 59 125 83 133 112Z'/%3E%3Cpath d='M134 109C145 87 155 66 163 45'/%3E%3Cpath d='M207 315C229 296 250 291 267 297C251 318 229 326 207 315Z'/%3E%3Cpath d='M208 314L267 297'/%3E%3Cpath d='M79 61C55 46 44 26 47 8C70 18 82 37 79 61Z'/%3E%3Cpath d='M78 59L47 8'/%3E%3Cpath d='M195 115C190 89 201 65 222 51C230 77 219 101 195 115Z'/%3E%3Cpath d='M196 113L222 51'/%3E%3Cpath d='M173 155C184 131 207 117 231 119C220 145 199 159 173 155Z'/%3E%3Cpath d='M175 154L231 119'/%3E%3Cpath d='M116 274C92 263 78 243 79 222C103 235 117 252 116 274Z'/%3E%3Cpath d='M115 272L79 222'/%3E%3Cpath d='M92 89C77 81 69 68 71 55C86 63 94 75 92 89Z'/%3E%3Cpath d='M92 88L71 55'/%3E%3Cpath d='M232 177C242 168 251 167 260 171C253 181 243 184 232 177Z'/%3E%3Cpath d='M233 177L260 171'/%3E%3C/svg%3E");
-}
-
-.image-frame {
-    position: relative;
-    z-index: 1;
-}
-
-@keyframes profileFloat {
-    0%, 100% {
-        translate: 0 0;
-    }
-
-    50% {
-        translate: 0 -14px;
-    }
 }
 
 .image-frame {
@@ -342,12 +332,9 @@ nav ul a:hover {
     margin-bottom: 18px;
 }
 
-/* THREE FACTS ON THE SAME LINE */
-
 .about-facts {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: 100%;
     gap: 30px;
     margin-top: 65px;
 }
@@ -558,7 +545,7 @@ nav ul a:hover {
 /* CONTACT */
 
 #contact {
-    background: #ECE6F2;
+    background: #E8DDEC;
     text-align: center;
     padding: 100px 10%;
 }
@@ -682,6 +669,16 @@ footer {
         max-width: 300px;
     }
 
+    /* Larger flower, shifted right on mobile too */
+
+    .home-image::before {
+        width: 340px;
+        height: 470px;
+        top: -30px;
+        right: -115px;
+        opacity: 0.8;
+    }
+
     .image-frame {
         height: 380px;
     }
@@ -695,17 +692,18 @@ footer {
         font-size: 25px;
     }
 
-    /* KEEP ALL THREE FACTS ON ONE LINE ON MOBILE */
-
     .about-facts {
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        width: 100%;
         gap: 12px;
         margin-top: 40px;
     }
 
-    .about-facts div {
-        min-width: 0;
+    .about-facts h3 {
+        font-size: 24px;
+    }
+
+    .about-facts p {
+        font-size: 10px;
     }
 
     .skills-grid {
@@ -751,11 +749,6 @@ footer {
         opacity: 1;
         transform: none;
         transition: none;
-    }
-
-    .home-image {
-        animation: none;
-        translate: none;
     }
 
     .image-frame,
