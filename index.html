@@ -18,7 +18,7 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVIGATION -->
 
     <header>
         <nav>
@@ -40,37 +40,61 @@
 
     <section id="home">
 
-        <div class="home-content reveal">
+        <div class="home-content">
 
-            <p class="eyebrow">HELLO, I'M MYDHILI</p>
+            <p class="eyebrow">COMPUTER SCIENCE STUDENT</p>
 
             <h1>
-                I turn<br>
-                curiosity into<br>
-                <span>creation.</span>
+                Learning to code.<br>
+                <span>Creating with purpose.</span>
             </h1>
 
             <p class="home-description">
-                A Computer Science Engineering student exploring
-                technology, learning new skills and bringing
-                creative ideas to life.
+                Hi, I'm Mydhili! I'm a Computer Science Engineering
+                student who enjoys exploring technology, developing
+                new skills and turning ideas into projects.
             </p>
 
-            <div class="home-links">
-                <a href="#projects" class="button">Explore my work ↗</a>
+            <div class="home-buttons">
 
-                <a href="#about" class="text-link">More about me ↓</a>
+                <a href="#projects" class="button">
+                    View my projects ↗
+                </a>
+
+                <a href="#about" class="secondary-link">
+                    Get to know me
+                </a>
+
             </div>
 
-            <div class="home-note">
-                <span>BASED IN KERALA, INDIA</span>
-                <span>COMPUTER SCIENCE STUDENT · 2029</span>
+            <div class="home-location">
+                <span>KERALA, INDIA</span>
+                <span>SAINTGITS COLLEGE OF ENGINEERING</span>
             </div>
 
         </div>
 
-        <div class="home-image reveal">
-            <img src="profile.jpg" alt="Mydhili Santhosh">
+
+        <!-- PROFILE PHOTO -->
+
+        <div class="home-image">
+
+            <div class="image-frame">
+
+                <img src="profile.jpeg"
+                     alt="Mydhili Santhosh"
+                     onerror="this.style.display='none'; this.parentElement.classList.add('image-missing');">
+
+                <span class="image-fallback">
+                    Profile photo
+                </span>
+
+            </div>
+
+            <p class="image-caption">
+                A little introduction to me ♡
+            </p>
+
         </div>
 
     </section>
@@ -80,45 +104,62 @@
 
     <section id="about">
 
-        <div class="section-label reveal">
-            <span>01 / ABOUT</span>
-            <span>A LITTLE INTRODUCTION</span>
-        </div>
+        <div class="section-heading">
 
-        <div class="about-content reveal">
+            <p class="section-number">01 / ABOUT ME</p>
 
             <h2>
-                Curious by nature.<br>
-                <span>Developer by choice.</span>
+                A little about <span>my journey.</span>
             </h2>
 
-            <p>
-                I am a Computer Science and Engineering student at
-                Saintgits College of Engineering with a foundational
-                knowledge of programming and web development.
-                I enjoy learning new technologies, solving problems
-                and developing projects that help me improve my skills.
-                I am eager to gain practical experience and grow
-                as a software developer.
-            </p>
+        </div>
 
-            <div class="about-details">
+        <div class="about-layout">
 
-                <div>
-                    <h3>2029</h3>
-                    <p>Expected graduation</p>
-                </div>
+            <div class="about-intro">
 
-                <div>
-                    <h3>06</h3>
-                    <p>Technical skills</p>
-                </div>
+                <p>
+                    I'm a Computer Science and Engineering student
+                    at Saintgits College of Engineering.
+                </p>
 
-                <div>
-                    <h3>02</h3>
-                    <p>Academic projects</p>
-                </div>
+            </div>
 
+            <div class="about-description">
+
+                <p>
+                    I have a foundational knowledge of programming
+                    and web development. I enjoy learning new
+                    technologies, solving problems and developing
+                    projects that help me improve my skills.
+                </p>
+
+                <p>
+                    I'm currently focused on strengthening my
+                    technical foundation, gaining practical
+                    experience and growing as a software developer.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-facts">
+
+            <div>
+                <h3>2029</h3>
+                <p>Expected graduation</p>
+            </div>
+
+            <div>
+                <h3>06</h3>
+                <p>Technical skills</p>
+            </div>
+
+            <div>
+                <h3>02</h3>
+                <p>Academic projects</p>
             </div>
 
         </div>
@@ -130,60 +171,58 @@
 
     <section id="skills">
 
-        <div class="section-label reveal">
-            <span>02 / SKILLS</span>
-            <span>WHAT I'M LEARNING</span>
-        </div>
+        <div class="section-heading">
 
-        <div class="skills-content reveal">
+            <p class="section-number">02 / MY SKILLS</p>
 
             <h2>
-                A growing <span>toolkit.</span>
+                Tools I work <span>with.</span>
             </h2>
 
-            <p class="section-description">
-                Technologies and tools I have been exploring
-                throughout my learning journey.
+            <p class="section-subtitle">
+                Technologies I've explored through coursework
+                and personal projects.
             </p>
 
-            <div class="skill-list">
+        </div>
 
-                <div class="skill-item">
-                    <span>01</span>
-                    <h3>Java</h3>
-                    <p>Programming</p>
-                </div>
 
-                <div class="skill-item">
-                    <span>02</span>
-                    <h3>C++</h3>
-                    <p>Programming</p>
-                </div>
+        <div class="skills-grid">
 
-                <div class="skill-item">
-                    <span>03</span>
-                    <h3>Python</h3>
-                    <p>Programming</p>
-                </div>
+            <div class="skill-item">
+                <span>01</span>
+                <h3>Java</h3>
+                <p>Programming</p>
+            </div>
 
-                <div class="skill-item">
-                    <span>04</span>
-                    <h3>HTML</h3>
-                    <p>Web development</p>
-                </div>
+            <div class="skill-item">
+                <span>02</span>
+                <h3>C++</h3>
+                <p>Programming</p>
+            </div>
 
-                <div class="skill-item">
-                    <span>05</span>
-                    <h3>CSS</h3>
-                    <p>Web development</p>
-                </div>
+            <div class="skill-item">
+                <span>03</span>
+                <h3>Python</h3>
+                <p>Programming</p>
+            </div>
 
-                <div class="skill-item">
-                    <span>06</span>
-                    <h3>MySQL</h3>
-                    <p>Database</p>
-                </div>
+            <div class="skill-item">
+                <span>04</span>
+                <h3>HTML</h3>
+                <p>Web development</p>
+            </div>
 
+            <div class="skill-item">
+                <span>05</span>
+                <h3>CSS</h3>
+                <p>Web development</p>
+            </div>
+
+            <div class="skill-item">
+                <span>06</span>
+                <h3>MySQL</h3>
+                <p>Database</p>
             </div>
 
         </div>
@@ -195,72 +234,103 @@
 
     <section id="projects">
 
-        <div class="section-label reveal">
-            <span>03 / PROJECTS</span>
-            <span>THINGS I'VE BUILT</span>
-        </div>
+        <div class="section-heading">
 
-        <div class="projects-content reveal">
+            <p class="section-number">03 / SELECTED WORK</p>
 
             <h2>
-                Made with <span>curiosity.</span>
+                Things I've <span>worked on.</span>
             </h2>
 
-            <p class="section-description">
-                A collection of academic projects and ideas
-                that have helped me explore technology and
-                improve my development skills.
+            <p class="section-subtitle">
+                A few projects from my learning journey.
             </p>
 
-            <div class="project-list">
+        </div>
 
-                <article class="project-item">
 
-                    <div class="project-number">01</div>
+        <div class="projects-grid">
 
-                    <div class="project-info">
 
-                        <p class="project-category">JAVA · JAVA SWING</p>
+            <!-- PROJECT 1: TIC TAC TOE -->
 
-                        <h3>Tic-Tac-Toe Game</h3>
+            <article class="project-card">
 
-                        <p>
-                            Developed a graphical Tic-Tac-Toe game for
-                            two players on the same device using Java Swing.
-                            Implemented player turns, button interactions
-                            and game logic.
-                        </p>
+                <div class="project-image">
 
+                    <img src="TicTacToe.png"
+                         alt="Tic Tac Toe project preview"
+                         onerror="this.style.display='none'; this.parentElement.classList.add('project-image-missing');">
+
+                    <span class="project-image-placeholder">
+                        Tic-Tac-Toe project preview
+                    </span>
+
+                </div>
+
+                <div class="project-details">
+
+                    <p class="project-category">
+                        01 / JAVA PROJECT
+                    </p>
+
+                    <h3>Tic-Tac-Toe Game</h3>
+
+                    <p>
+                        Developed a graphical Tic-Tac-Toe game for
+                        two players on the same device using Java Swing.
+                        Implemented player turns, button interactions
+                        and game logic.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Java Swing</span>
                     </div>
 
-                    <div class="project-arrow">↗</div>
+                </div>
 
-                </article>
+            </article>
 
 
-                <article class="project-item">
+            <!-- PROJECT 2: UNILOOP -->
 
-                    <div class="project-number">02</div>
+            <article class="project-card">
 
-                    <div class="project-info">
+                <div class="project-image">
 
-                        <p class="project-category">HTML · CSS</p>
+                    <img src="uniloop.jpeg"
+                         alt="UniLoop website project preview"
+                         onerror="this.style.display='none'; this.parentElement.classList.add('project-image-missing');">
 
-                        <h3>UniLoop</h3>
+                    <span class="project-image-placeholder">
+                        UniLoop project preview
+                    </span>
 
-                        <p>
-                            Contributed to the UI development of a campus
-                            marketplace website, focusing on styling,
-                            colour themes, backgrounds and page design.
-                        </p>
+                </div>
 
+                <div class="project-details">
+
+                    <p class="project-category">
+                        02 / WEB DEVELOPMENT
+                    </p>
+
+                    <h3>UniLoop</h3>
+
+                    <p>
+                        Contributed to the UI development of a campus
+                        marketplace website, focusing on styling,
+                        colour themes, backgrounds and page design.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
                     </div>
 
-                    <div class="project-arrow">↗</div>
+                </div>
 
-                </article>
-
-            </div>
+            </article>
 
         </div>
 
@@ -271,52 +341,53 @@
 
     <section id="certificates">
 
-        <div class="section-label reveal">
-            <span>04 / CERTIFICATES</span>
-            <span>LEARNING JOURNEY</span>
-        </div>
+        <div class="section-heading">
 
-        <div class="certificates-content reveal">
+            <p class="section-number">04 / CERTIFICATIONS</p>
 
             <h2>
-                Learning never <span>stops.</span>
+                Learning beyond <span>the classroom.</span>
             </h2>
 
-            <p class="section-description">
-                Opportunities that helped me explore
-                new areas of technology.
-            </p>
+        </div>
 
-            <div class="certificate-list">
 
-                <div class="certificate-item">
+        <div class="certificate-list">
 
-                    <div>
-                        <p class="certificate-date">19–23 OCTOBER 2025</p>
+            <div class="certificate-item">
 
-                        <h3>AI & Data Science Internship</h3>
+                <div>
 
-                        <p>Retecnox Technologies LLP</p>
-                    </div>
+                    <p class="certificate-date">
+                        19–23 OCTOBER 2025
+                    </p>
 
-                    <span>↗</span>
+                    <h3>AI & Data Science Internship</h3>
+
+                    <p>Retecnox Technologies LLP</p>
 
                 </div>
 
+                <span>01</span>
 
-                <div class="certificate-item">
+            </div>
 
-                    <div>
-                        <p class="certificate-date">24 OCTOBER 2025</p>
 
-                        <h3>AI & Data Science Workshop</h3>
+            <div class="certificate-item">
 
-                        <p>Retecnox Technologies LLP</p>
-                    </div>
+                <div>
 
-                    <span>↗</span>
+                    <p class="certificate-date">
+                        24 OCTOBER 2025
+                    </p>
+
+                    <h3>AI & Data Science Workshop</h3>
+
+                    <p>Retecnox Technologies LLP</p>
 
                 </div>
+
+                <span>02</span>
 
             </div>
 
@@ -329,23 +400,23 @@
 
     <section id="contact">
 
-        <div class="contact-content reveal">
+        <div class="contact-content">
 
-            <p class="eyebrow">05 / CONTACT</p>
+            <p class="section-number">05 / GET IN TOUCH</p>
 
             <h2>
-                Let's make<br>
-                something <span>meaningful.</span>
+                Have something<br>
+                <span>in mind?</span>
             </h2>
 
             <p>
-                I'm always interested in learning, exploring
-                opportunities and connecting with people.
-                Feel free to reach out!
+                I'm always open to learning opportunities,
+                interesting projects and meaningful connections.
+                Let's connect!
             </p>
 
             <a href="mailto:mydhilisan2007@gmail.com" class="button">
-                Say hello ↗
+                Get in touch ↗
             </a>
 
             <div class="contact-links">
@@ -374,15 +445,17 @@
     <!-- FOOTER -->
 
     <footer>
-        <p>© 2026 Mydhili Santhosh. Made with curiosity and care.</p>
+
+        <p>
+            © 2026 Mydhili Santhosh · Designed and developed with care.
+        </p>
+
     </footer>
 
 
-    <!-- SCROLL ANIMATION -->
+    <!-- SCROLL ANIMATIONS -->
 
     <script>
-
-        const revealElements = document.querySelectorAll('.reveal');
 
         const observer = new IntersectionObserver((entries) => {
 
@@ -390,22 +463,29 @@
 
                 if (entry.isIntersecting) {
 
-                    entry.target.classList.add('active');
+                    entry.target.classList.add('visible');
+
+                    observer.unobserve(entry.target);
 
                 }
 
             });
 
         }, {
-            threshold: 0.15
+            threshold: 0.08
         });
 
-        revealElements.forEach(element => {
+        document.querySelectorAll(
+            '.home-content, .home-image, .section-heading, .about-layout, .about-facts, .skills-grid, .projects-grid, .certificate-list, .contact-content'
+        ).forEach(element => {
+
+            element.classList.add('reveal');
+
             observer.observe(element);
+
         });
 
     </script>
 
 </body>
-
 </html>
