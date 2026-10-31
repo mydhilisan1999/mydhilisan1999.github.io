@@ -693,3 +693,11 @@ footer {
     }
 
 }
+
+/* FIX: KEEP PAGE CONTENT VISIBLE */
+
+.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+}
