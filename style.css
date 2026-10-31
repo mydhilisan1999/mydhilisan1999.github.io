@@ -58,7 +58,7 @@ nav a:hover {
 section {
     padding: 90px 10%;
     text-align: center;
-    scroll-margin-top: 35vh;
+    scroll-margin-top: 45vh;
 }
 
 /* HOME */
@@ -226,7 +226,7 @@ footer {
 
     section {
         padding: 65px 6%;
-        scroll-margin-top: 35vh;
+        scroll-margin-top: 45vh;
     }
 
     .project-card,
