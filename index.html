@@ -472,31 +472,55 @@
 
     <script>
 
-        const observer = new IntersectionObserver((entries) => {
+        document.addEventListener('DOMContentLoaded', () => {
 
-            entries.forEach(entry => {
+            const revealElements = document.querySelectorAll(
+                '.home-content, .home-image, ' +
+                '.section-heading, .about-layout, .about-facts, ' +
+                '.skills-grid, .skill-item, ' +
+                '.projects-grid, .project-card, ' +
+                '.certificate-list, .certificate-item, ' +
+                '.contact-content'
+            );
 
-                if (entry.isIntersecting) {
+            const prefersReducedMotion =
+                window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-                    entry.target.classList.add('visible');
+            if (!('IntersectionObserver' in window) || prefersReducedMotion) {
 
-                    observer.unobserve(entry.target);
+                revealElements.forEach(element => {
+                    element.classList.add('reveal', 'visible');
+                });
 
-                }
+                return;
+            }
 
+            const observer = new IntersectionObserver((entries, currentObserver) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add('visible');
+
+                        currentObserver.unobserve(entry.target);
+
+                    }
+
+                });
+
+            }, {
+                threshold: 0.08,
+                rootMargin: '0px 0px -40px 0px'
             });
 
-        }, {
-            threshold: 0.08
-        });
+            revealElements.forEach(element => {
 
-        document.querySelectorAll(
-    '.home-content, .home-image, .section-heading, .about-layout, .about-facts, .skills-grid, .skill-item, .projects-grid, .project-card, .certificate-list, .certificate-item, .contact-content'
-).forEach(element => {
+                element.classList.add('reveal');
 
-            element.classList.add('reveal');
+                observer.observe(element);
 
-            observer.observe(element);
+            });
 
         });
 
